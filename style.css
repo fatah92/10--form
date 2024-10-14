@@ -4,3 +4,8 @@ footer{
     padding: 20px;
 }
 
+footer h3{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
