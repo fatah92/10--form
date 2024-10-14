@@ -1,49 +1,88 @@
-footer{
+/* Global styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
     background-color: rgb(112, 18, 18);
-    color:beige;
+    padding: 1em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: beige;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: rgb(112, 18, 18);
+    color: beige;
     padding: 20px;
     text-align: center;
 }
 
-footer h3{
+/* Layout för kontakt-info och karta sida vid sida */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Två kolumner, lika breda */
+    gap: 20px;
+    justify-items: start;
+}
+
+footer h3 {
     font-size: 2em;
     margin-bottom: 1em;
 }
 
-.contact-info, .map{
+.contact-info, .map {
     margin-bottom: 2em;
 }
 
-.contact-info p{
+.contact-info p {
     margin-bottom: 1.5em;
 }
 
-
-
-.map iframe{
+.map iframe {
     border-radius: 8px;
-   
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
-.maker{
+.maker {
     text-align: center;
 }
 
-.contact-footer{
+.contact-footer {
     padding: 2rem 0;
-    
 }
-.contact-footer h3{
+
+.contact-footer h3 {
     font-size: 1.3rem;
     color: beige;
     margin-bottom: 1rem;
     text-align: center;
 }
-.social-links{
+
+.social-links {
     display: flex;
     justify-content: center;
 }
-.social-links a{
+
+.social-links a {
     text-decoration: none;
     width: 40px;
     height: 40px;
@@ -56,8 +95,66 @@ footer h3{
     margin: 0.4rem;
     transition: all 0.4s ease;
 }
-.social-links a:hover{
+
+.social-links a:hover {
     color: #f7327a;
     border-color: #f7327a;
 }
 
+/* Responsiv design */
+
+/* För mobila skärmar (max-width: 768px) */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr; /* En kolumn på mindre skärmar */
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .contact-info, .map {
+        text-align: left;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
+
+    .contact-footer h3 {
+        font-size: 1.2rem;
+    }
+
+    footer h3 {
+        font-size: 1.6rem;
+    }
+}
+
+/* För större skärmar (över 1024px) */
+@media (min-width: 1024px) {
+    footer {
+        padding: 30px;
+    }
+
+    footer h3 {
+        font-size: 2.2em;
+    }
+
+    .contact-footer h3 {
+        font-size: 1.5rem;
+    }
+
+    .map iframe {
+        max-width: 800px;
+    }
+}
