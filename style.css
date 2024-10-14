@@ -1,11 +1,63 @@
 footer{
     background-color: rgb(112, 18, 18);
-    color: rgb(239, 229, 217);
+    color:beige;
     padding: 20px;
+    text-align: center;
 }
 
 footer h3{
     font-size: 2em;
     margin-bottom: 1em;
+}
+
+.contact-info, .map{
+    margin-bottom: 2em;
+}
+
+.contact-info p{
+    margin-bottom: 1.5em;
+}
+
+
+
+.map iframe{
+    border-radius: 8px;
+   
+}
+
+.maker{
+    text-align: center;
+}
+
+.contact-footer{
+    padding: 2rem 0;
+    
+}
+.contact-footer h3{
+    font-size: 1.3rem;
+    color: beige;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: beige;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+.social-links a:hover{
+    color: #f7327a;
+    border-color: #f7327a;
 }
 
