@@ -1,8 +1,17 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(112, 18, 18);
+}
+
 /* Global styling */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    color: rgb(112, 18, 18);
+    background-color: beige;
+    padding: 20px ;
 }
 
 .menu {
@@ -19,7 +28,7 @@ header {
 }
 
 .menu-links a {
-    color: white;
+    color: rgb(112, 18, 18);
     text-decoration: none;
     margin-left: 15px;
 }
@@ -28,19 +37,56 @@ header {
     text-decoration: underline;
 }
 
+/* Sektioner */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgb(112, 18, 18);
+    color: beige;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+/* Flexbox för schemat */
+.days {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.day {
+    flex: 1;
+    margin: 10px;
+    color: rgb(112, 18, 18);
+    background-color: beige;
+    padding: 150px;
+    border-radius: 8px;
+    
+
+}
+
+
 footer {
     background-color: rgb(112, 18, 18);
     color: beige;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 /* Layout för kontakt-info och karta sida vid sida */
 .footer-grid {
-    display: grid;
+   /* display: grid;
     grid-template-columns: 1fr 1fr; /* Två kolumner, lika breda */
-    gap: 20px;
-    justify-items: start;
+   /* gap: 20px;
+    justify-items: start;*/
+    flex:1;
 }
 
 footer h3 {
@@ -58,13 +104,14 @@ footer h3 {
 
 .map iframe {
     border-radius: 8px;
-    width: 100%;
+    width: 500px;
     height: 300px;
     border: 0;
 }
 
 .maker {
     text-align: center;
+    color: beige;
 }
 
 .contact-footer {
@@ -88,7 +135,7 @@ footer h3 {
     width: 40px;
     height: 40px;
     color: beige;
-    border: 2px solid #fff;
+    border: 2px solid beige;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -101,6 +148,88 @@ footer h3 {
     color: #f7327a;
     border-color: #f7327a;
 }
+/* Event Section (formerly product) */
+.event-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(112, 18, 18);
+    color: beige;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    max-width: 900px;
+    border: 1px solid #ddd;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    background-color: beige;
+}
+
+.event-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 2em;
+}
+
+.event-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    color: rgb(112, 18, 18)
+}
+
+.description {
+    margin-bottom: 1.5em;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    color: rgb(112, 18, 18)
+}
+
+.features {
+    margin-bottom: 2em;
+    padding-left: 2em;
+}
+
+.features li {
+    margin-bottom: 0.5em;
+    color: rgb(112, 18, 18)
+}
+
+.boka-button {
+    padding: 10px 20px;
+    background-color: #a72400;
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+}
+
+.boka-button:hover {
+    background-color: #47595b;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .event-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .event-image {
+        width: 400px;
+        height: 470px;
+    }
+}
+
 
 /* Responsiv design */
 
