@@ -11,7 +11,7 @@ body {
 header {
     color: rgb(112, 18, 18);
     background-color: beige;
-    padding: 20px ;
+    padding: 2em ;
 }
 
 .menu {
@@ -20,7 +20,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2em;
 }
 
 .menu h1 {
@@ -39,114 +39,17 @@ header {
 
 /* Sektioner */
 section {
-    padding: 20px;
+    padding: 2em;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0;
     background-color: rgb(112, 18, 18);
     color: beige;
     border-radius: 8px;
 }
 
-h2 {
-    margin-bottom: 15px;
-    font-size: 28px;
-}
-
-/* Flexbox för schemat */
-.days {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.day {
-    flex: 1;
-    margin: 10px;
-    color: rgb(112, 18, 18);
-    background-color: beige;
-    padding: 150px;
-    border-radius: 8px;
-    
-
-}
-
-
-footer {
-    background-color: rgb(112, 18, 18);
-    color: beige;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-/* Layout för kontakt-info och karta sida vid sida */
-.footer-grid {
-   /* display: grid;
-    grid-template-columns: 1fr 1fr; /* Två kolumner, lika breda */
-   /* gap: 20px;
-    justify-items: start;*/
-    flex:1;
-}
-
-footer h3 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.contact-info, .map {
-    margin-bottom: 2em;
-}
-
-.contact-info p {
+.schedule h2 {
     margin-bottom: 1.5em;
-}
-
-.map iframe {
-    border-radius: 8px;
-    width: 500px;
-    height: 300px;
-    border: 0;
-}
-
-.maker {
-    text-align: center;
-    color: beige;
-}
-
-.contact-footer {
-    padding: 2rem 0;
-}
-
-.contact-footer h3 {
-    font-size: 1.3rem;
-    color: beige;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-}
-
-.social-links a {
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    color: beige;
-    border: 2px solid beige;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.4rem;
-    transition: all 0.4s ease;
-}
-
-.social-links a:hover {
-    color: #f7327a;
-    border-color: #f7327a;
+    font-size: 28px;
 }
 /* Event Section (formerly product) */
 .event-section {
@@ -175,7 +78,7 @@ footer h3 {
     max-width: 400px;
     height: auto;
     border-radius: 20px;
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 .event-details h2 {
@@ -217,6 +120,189 @@ footer h3 {
     transition: all 0.3s;
 }
 
+
+/* Flexbox för schemat */
+.days {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.day {
+    flex: 1;
+    margin: 10px;
+    color: rgb(112, 18, 18);
+    background-color: beige;
+    padding: 150px;
+    border-radius: 8px;
+}
+
+.day-image {
+    width: 100px;
+    height: 100px;
+    
+}
+
+/*footer */
+
+.contact-text{
+    height: 40vh;
+    background: linear-gradient( rgb(132, 22, 22),  rgb(112, 18, 18));
+    text-align: center;
+    color: beige;
+    border-top: 1px solid beige;
+    margin-bottom: 0.5em;
+}
+
+.contact-text h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    margin-top: 0.5em;
+}
+
+.text{
+    font-weight: 30;
+    opacity: 0.9;
+}
+.contact-text .text{
+    margin: 1.6rem 0;
+}
+.contact-container{
+    max-width: 1320px;
+    margin: 0;
+    padding: 0;
+   
+}
+.contact-fact{
+    margin: 0;
+    text-align: center;
+    padding: 2rem 0;
+    
+    
+}
+.contact-fact span{
+    display: block;
+    flex: 1;
+    
+}
+.contact-fact div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+    color: beige;
+    
+}
+.contact-fact span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: rgb(186, 186, 162);
+    
+}
+.contact-fact div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: beige;
+}
+.contact-fact .text{
+    padding-top: 0.4rem;
+}
+.contact-file{
+    padding: 2rem 0.5rem 0;
+    border-top: 1px solid beige;
+    
+}
+.contact-file form{
+    padding-bottom: 1rem;
+}
+.form-control{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+}
+.form-control:focus{
+    box-shadow: 300px 0 6px -300px rgb(135, 7, 7);
+
+}
+.contact-file form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+.send-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: beige;
+    color:  rgb(112, 18, 18);
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.send-btn:hover{
+    opacity: 0.8;
+    scale: 0.9;
+}
+.contact-file > div iframe{
+    width: 500px;
+    height: 325px;
+    border-radius: 2%;
+}
+.contact-file > div{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+.maker {
+    text-align: center;
+    color: beige;
+    padding-bottom: 1em;
+}
+
+.contact-footer {
+    padding: 2rem 0;
+}
+
+.contact-footer h3 {
+    font-size: 1.3rem;
+    color: beige;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: beige;
+    border: 2px solid beige;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    color: #f7327a;
+    border-color: #f7327a;
+}
+
 /* Responsive adjustments */
 @media (min-width: 768px) {
     .event-container {
@@ -234,28 +320,30 @@ footer h3 {
 /* Responsiv design */
 
 /* För mobila skärmar (max-width: 768px) */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        text-align: center;
+    @media (max-width: 768px) {
+        .menu {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .menu-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 1em;
+        }
     }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
     .footer-grid {
         grid-template-columns: 1fr; /* En kolumn på mindre skärmar */
     }
 
     .map iframe {
         width: 100%;
-        height: 250px;
+        height: 100%;
+        align-items: start;
     }
     
-    .contact-info, .map {
-        text-align: left;
-    }
+ 
 
     .social-links {
         flex-wrap: wrap;
@@ -286,5 +374,33 @@ footer h3 {
 
     .map iframe {
         max-width: 800px;
+    }
+}
+@media screen and (min-width: 768px){
+    .contact-text .text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-fact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .contact-text .text{
+        width: 50%;
+    }
+    .contact-file{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .contact-fact{
+        grid-template-columns: repeat(4, 1fr);
     }
 }
