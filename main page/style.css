@@ -12,6 +12,7 @@
 }
 body {
     background-color: var(--clr-red);
+    font-family:'Times New Roman', Times, serif;
 }
 
 /* Global styling */
@@ -44,6 +45,21 @@ header {
     text-decoration: underline;
 }
 
+.intro{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--clr-biege);
+    margin: 0.5em;
+}
+.head{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+    margin-top: 0.5em;
+    text-align: center;
+    
+}
 /* Sektioner */
 section {
     padding: 2em;
@@ -129,26 +145,56 @@ section {
 
 
 /* Flexbox för schemat */
+/* Flexbox och responsiv styling */
 .days {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .day {
     flex: 1;
+    min-width: 280px;
+    max-width: 500px;
     margin: 10px;
     color: var(--clr-red);
     background-color: var(--clr-biege);
-    padding: 150px;
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.day:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+.day h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.day ul {
+    list-style: none;
+    padding: 0;
+}
+
+.day ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .day-image {
-    width: 100px;
-    height: 100px;
-    
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
+
+
+
 
 /*footer */
 
@@ -332,7 +378,7 @@ section {
             gap: 10px;
             padding: 1em;
         }
-    }
+    
     .footer {
         grid-template-columns: 1fr; /* En kolumn på mindre skärmar */
     }
@@ -357,6 +403,17 @@ section {
         font-size: 1.6rem;
     }
 
+    .days {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .day {
+        max-width: 90%;
+    }
+
+
+}
 /* För större skärmar (över 1024px) */
 @media (min-width: 1024px) {
     footer {
@@ -401,5 +458,19 @@ section {
 @media screen and (min-width: 1200px){
     .contact-fact{
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .day {
+        padding: 15px;
+    }
+
+    .day h3 {
+        font-size: 1.3rem;
+    }
+
+    .day ul li {
+        font-size: 0.9rem;
     }
 }
