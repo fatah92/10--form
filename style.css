@@ -356,7 +356,6 @@ section {
     footer h3 {
         font-size: 1.6rem;
     }
-}
 
 /* För större skärmar (över 1024px) */
 @media (min-width: 1024px) {
