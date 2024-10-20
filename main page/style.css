@@ -118,6 +118,7 @@ section {
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
+    text-decoration: none;
 }
 
 .boka-button:hover {
