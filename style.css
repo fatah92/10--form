@@ -1,16 +1,23 @@
+:root{
+    --clr-red:rgb(112, 18, 18);
+    --clr-biege: beige; 
+    --clr-pink: #f7327a;
+}
+
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 body {
-    background-color: rgb(112, 18, 18);
+    background-color: var(--clr-red);
 }
 
 /* Global styling */
 header {
-    color: rgb(112, 18, 18);
-    background-color: beige;
+    color: var(--clr-red);
+    background-color: var(--clr-biege);
     padding: 2em ;
 }
 
@@ -28,7 +35,7 @@ header {
 }
 
 .menu-links a {
-    color: rgb(112, 18, 18);
+    color: var(--clr-red);
     text-decoration: none;
     margin-left: 15px;
 }
@@ -41,9 +48,8 @@ header {
 section {
     padding: 2em;
     max-width: 1200px;
-    margin: 0;
-    background-color: rgb(112, 18, 18);
-    color: beige;
+    background-color: var(--clr-red);
+    color: var(--clr-biege);
     border-radius: 8px;
 }
 
@@ -56,8 +62,8 @@ section {
     padding: 50px 20px;
     display: flex;
     justify-content: center;
-    background-color: rgb(112, 18, 18);
-    color: beige;
+    background-color: var(--clr-red);
+    color: var(--clr-biege);
 }
 
 .event-container {
@@ -70,7 +76,7 @@ section {
     padding: 2em;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-    background-color: beige;
+    background-color: var(--clr-biege);
 }
 
 .event-image {
@@ -84,14 +90,14 @@ section {
 .event-details h2 {
     font-size: 1.8em;
     margin-bottom: 1em;
-    color: rgb(112, 18, 18)
+    color: var(--clr-red)
 }
 
 .description {
     margin-bottom: 1.5em;
     font-size: 1em;
     font-family: "Poppins", sans-serif;
-    color: rgb(112, 18, 18)
+    color: var(--clr-red)
 }
 
 .features {
@@ -101,13 +107,13 @@ section {
 
 .features li {
     margin-bottom: 0.5em;
-    color: rgb(112, 18, 18)
+    color: var(--clr-red)
 }
 
 .boka-button {
     padding: 10px 20px;
     background-color: #a72400;
-    color: beige;
+    color: var(--clr-biege);
     border: none;
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
@@ -131,8 +137,8 @@ section {
 .day {
     flex: 1;
     margin: 10px;
-    color: rgb(112, 18, 18);
-    background-color: beige;
+    color: var(--clr-red);
+    background-color: var(--clr-biege);
     padding: 150px;
     border-radius: 8px;
 }
@@ -147,10 +153,10 @@ section {
 
 .contact-text{
     height: 40vh;
-    background: linear-gradient( rgb(132, 22, 22),  rgb(112, 18, 18));
+    background: linear-gradient( rgb(132, 22, 22),  var(--clr-red));
     text-align: center;
-    color: beige;
-    border-top: 1px solid beige;
+    color: var(--clr-biege);
+    border-top: 1px solid var(--clr-biege);
     margin-bottom: 0.5em;
 }
 
@@ -171,15 +177,11 @@ section {
 }
 .contact-container{
     max-width: 1320px;
-    margin: 0;
     padding: 0;
    
 }
 .contact-fact{
-    margin: 0;
     text-align: center;
-    padding: 2rem 0;
-    
     
 }
 .contact-fact span{
@@ -190,7 +192,7 @@ section {
 .contact-fact div{
     margin: 0.8rem 0;
     padding: 1rem;
-    color: beige;
+    color: var(--clr-biege);
     
 }
 .contact-fact span .fas{
@@ -202,14 +204,14 @@ section {
 .contact-fact div span:nth-child(2){
     font-weight: 500;
     font-size: 1.1rem;
-    color: beige;
+    color: var(--clr-biege);
 }
 .contact-fact .text{
     padding-top: 0.4rem;
 }
 .contact-file{
     padding: 2rem 0.5rem 0;
-    border-top: 1px solid beige;
+    border-top: 1px solid var(--clr-biege);
     
 }
 .contact-file form{
@@ -225,10 +227,7 @@ section {
     font-size: 1rem;
 
 }
-.form-control:focus{
-    box-shadow: 300px 0 6px -300px rgb(135, 7, 7);
 
-}
 .contact-file form div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -238,8 +237,8 @@ section {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
-    background-color: beige;
-    color:  rgb(112, 18, 18);
+    background-color: var(--clr-biege);
+    color:  var(--clr-red);
     border: none;
     border-radius: 5px;
     padding: 0.7rem 1.5rem;
@@ -264,7 +263,7 @@ section {
 
 .maker {
     text-align: center;
-    color: beige;
+    color: var(--clr-biege);
     padding-bottom: 1em;
 }
 
@@ -274,7 +273,7 @@ section {
 
 .contact-footer h3 {
     font-size: 1.3rem;
-    color: beige;
+    color: var(--clr-biege);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -288,8 +287,8 @@ section {
     text-decoration: none;
     width: 40px;
     height: 40px;
-    color: beige;
-    border: 2px solid beige;
+    color: var(--clr-biege);
+    border: 2px solid var(--clr-biege);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -299,8 +298,8 @@ section {
 }
 
 .social-links a:hover {
-    color: #f7327a;
-    border-color: #f7327a;
+    color: var(--clr-pink);
+    border-color: var(--clr-pink);
 }
 
 /* Responsive adjustments */
