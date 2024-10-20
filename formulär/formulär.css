@@ -145,10 +145,21 @@ input[type="checkbox"] {
         font-size: 0.9rem;
         padding: 0.75rem;
     }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-bars {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 1em;
+    }
 }
 
 @media (max-width: 480px) {
-    .gothenburg-registration-form {
+    .register-form {
         padding: 1rem;
     }
 
