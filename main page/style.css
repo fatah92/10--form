@@ -34,13 +34,13 @@ header {
     font-size: 24px;
 }
 
-.menu-links a {
+.sub-bars a {
     color: var(--clr-red);
     text-decoration: none;
     margin-left: 15px;
 }
 
-.menu-links a:hover {
+.sub-bars a:hover {
     text-decoration: underline;
 }
 
@@ -325,14 +325,14 @@ section {
             align-items: center;
         }
     
-        .menu-links {
+        .sub-bars {
             display: flex;
             flex-direction: column;
             gap: 10px;
             padding: 1em;
         }
     }
-    .footer-grid {
+    .footer {
         grid-template-columns: 1fr; /* En kolumn på mindre skärmar */
     }
 

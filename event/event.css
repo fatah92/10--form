@@ -41,13 +41,13 @@ header {
     font-size: 24px;
 }
 
-.menu-links a {
+.sub-bars a {
     color: var(--clr-red);
     text-decoration: none;
     margin-left: 15px;
 }
 
-.menu-links a:hover {
+.sub-bars a:hover {
     text-decoration: underline;
 }
 
@@ -91,7 +91,7 @@ header {
 
 
 /* Right container (Image section) */
-.pool-image {
+.imge {
     width: 610px;
     height: 615px;
     border-radius: 2px;
@@ -99,7 +99,7 @@ header {
     transition: transform 0.3s ease; /* Gör så att övergången blir mjuk */
 }
 
-.pool-image:hover {
+.imge:hover {
     transform: scale(1.05); /* Zoomar in bilden när muspekaren är över den */
 }
 
@@ -198,8 +198,21 @@ header {
         font-size: 1rem;
     }
 
-    .pool-image {
+    .imge {
         width: 50%;
         height:50%;
     }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-bars {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 1em;
+    }
+
 }
