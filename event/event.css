@@ -1,11 +1,6 @@
 :root {
-    --main-bg-color: #f9f4ed;
-    --primary-color: #a84d34;
     --secondary-color: #5b0e07;
-    --button-padding: 1rem 2rem;
     --transition-speed: 0.3s;
-    --hero-font-size: 3rem;
-    --sub-font-size: 2rem;
     --clr-red:rgb(112, 18, 18);
     --clr-biege: beige; 
     --clr-pink: #f7327a;
@@ -78,7 +73,7 @@ header {
 
 .left-side h1,
 .right-side h1 {
-    font-size: var(--hero-font-size);
+    font-size: 3rem;
     color: var(--clr-red);
     margin-bottom: 1rem;
 }
@@ -116,7 +111,7 @@ header {
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
-    padding: var(--button-padding);
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
     transition: background-color var(--transition-speed);
     
