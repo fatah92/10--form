@@ -78,8 +78,7 @@ header {
     margin-bottom: 1rem;
 }
 
-.left-side p,
-.right-side p {
+.left-side p, .right-side p {
     font-size: 1.125rem;
     margin-bottom: 2rem; 
 }
@@ -90,8 +89,7 @@ header {
     width: 610px;
     height: 615px;
     border-radius: 2px;
-    border-radius: 2px;
-    transition: transform 0.3s ease; /* Gör så att övergången blir mjuk */
+    transition: transform 0.3s ease; 
 }
 
 .imge:hover {
@@ -105,7 +103,6 @@ header {
 }
 
 
-
 /* Button */
 .button {
     text-decoration: none;
@@ -113,17 +110,21 @@ header {
     font-weight: bold;
     padding: 1rem 2rem;
     border-radius: 0.5rem;
-    transition: background-color var(--transition-speed);
-    
-}
-
-.button.boka {
     background-color: var(--secondary-color);
     color: #fff;
+    box-shadow: 8px 8px 8px gray;
+    transition: transform 0.3s ease;
 }
 
-.button.boka:hover {
-    background-color: #7d1d12;
+    
+
+.button:hover {
+    background-color: #c53315;
+    color: var(--clr-biege);
+    transform: translateY(-4px);
+    box-shadow: 8px 16px 16px rgba(15, 1, 1, 0.5);
+    
+    
 }
 
 
