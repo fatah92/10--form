@@ -220,6 +220,7 @@ section {
 .text{
     font-weight: 30;
     opacity: 0.9;
+    font-size: 1.2em;
 }
 .contact-text .text{
     margin: 1.6rem 0;
