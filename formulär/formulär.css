@@ -1,27 +1,25 @@
 :root {
-    
-    --clr-red:rgb(112, 18, 18);
-    --clr-biege: beige; 
+    --clr-red: rgb(112, 18, 18);
+    --clr-biege: beige;
     --clr-pink: #f7327a;
     --font-color: #333;
-
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: var(--clr-red);
-
 }
 
 /* Global styling */
 header {
     color: var(--clr-red);
     background-color: var(--clr-biege);
-    padding: 2em ;
+    padding: 2em;
 }
 
 .menu {
@@ -34,13 +32,14 @@ header {
 }
 
 .menu h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .sub-bars a {
     color: var(--clr-red);
     text-decoration: none;
     margin-left: 15px;
+    font-size: 1rem;
 }
 
 .sub-bars a:hover {
@@ -50,13 +49,14 @@ header {
 .register-form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 2rem;
     background-color: rgba(255, 253, 240, 0.9);
     box-shadow: 0 4px 8px rgba(247, 247, 247, 0.1);
     border-radius: 10px;
-   margin-top: 2em;
+    margin-top: 2em;
+   
 }
 
 .register-form h2 {
@@ -66,14 +66,14 @@ header {
 }
 
 .form-reg {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.26em;
 }
 
 input[type="text"],
@@ -93,19 +93,28 @@ textarea:invalid {
     border-color: #e74c3c;
 }
 
-.form-reg-radio,
-.form-reg-checkbox {
+.checkbox-group,
+.radio-group {
     display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-    font-size: 1.1em;
-    
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5em;
 }
 
-.form-reg-radio label,
-.form-reg-checkbox label {
-    font-weight: normal;
+.checkbox-group div,
+.radio-group div {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label,
+.radio-group label {
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--font-color);
+    margin-top: 0.5em;
+    
     
 }
 
@@ -116,11 +125,12 @@ textarea:invalid {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     width: 100%;
-    box-shadow: 10px 10px 16px rgba(11, 10, 10, 0.3); /* Outer shadow */
-  transition: box-shadow 0.3s ease;
-
+    box-shadow: 10px 10px 16px rgba(11, 10, 10, 0.3);
+    transition: box-shadow 0.3s ease;
+    margin-top: 1em;
 }
 
 .submit-button:hover {
@@ -130,12 +140,7 @@ textarea:invalid {
     color: var(--clr-biege);
 }
 
-
-input[type="radio"] {
-    transform: scale(1.5);
-    margin-right: 0.5rem;
-}
-
+input[type="radio"],
 input[type="checkbox"] {
     transform: scale(1.5);
     margin-right: 0.5rem;
@@ -150,8 +155,8 @@ input[type="checkbox"] {
         padding: 1.5rem;
     }
 
-    .form-reg-radio,
-    .form-reg-checkbox {
+    .checkbox-group,
+    .radio-group {
         flex-direction: column;
         gap: 0.5rem;
     }
@@ -160,6 +165,7 @@ input[type="checkbox"] {
         font-size: 0.9rem;
         padding: 0.75rem;
     }
+
     .menu {
         flex-direction: column;
         align-items: center;
@@ -190,6 +196,7 @@ input[type="checkbox"] {
         font-size: 0.8rem;
         padding: 0.5rem;
     }
+
     .menu {
         flex-direction: column;
         align-items: center;
@@ -201,5 +208,4 @@ input[type="checkbox"] {
         gap: 10px;
         padding: 1em;
     }
-
 }

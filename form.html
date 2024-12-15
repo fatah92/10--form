@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anmälan</title>
-    <link rel="stylesheet" href="./formulär/formulär.css">
+    <link rel="stylesheet" href="formulär/formulär.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous"/>
 </head>
 <body>
@@ -19,77 +19,75 @@
             </div>
         </div>
     </header>
-            <form class="register-form" action="#" method="post">
-                <h2>Anmäl Dig Till Bättre Webb</h2>
-        
-                <div class="form-reg">
-                    <label for="first-name">Förnamn *</label>
-                    <input type="text" id="name" placeholder="Förnamn" name="name" required>
-                </div>
-                <div class="form-reg">
-                    <label for="name">Efternamn *</label>
-                    <input type="text" id="name" placeholder="Efternamn" name="name" required>
-                </div>
-        
-                <div class="form-reg">
-                    <label for="address">Adress *</label>
-                    <input type="text" id="address" name="address" required>
-                </div>
-        
-                <div class="form-reg">
-                    <label for="email">E-postadress *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-        
-                <div class="form-reg-checkbox">
-                    <label><strong>Vilka dagar vill du delta? *</strong></label>
-                    <div>
-                        <input type="checkbox" id="day1" name="days" value="1">
-                        <label for="day1">Dag 1</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="day2" name="days" value="2">
-                        <label for="day2">Dag 2</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="day3" name="days" value="3">
-                        <label for="day3">Dag 3</label>
-                    </div>
-                </div>
-        
-                <div class="form-reg-checkbox">
-                    <label><strong>Mat alternativ *</strong></label>
-                    <div>
-                        <input type="radio" id="meat" name="food" value="meat">
-                        <label for="meat">Kött</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="fish" name="food" value="fish">
-                        <label for="fish">Fisk</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="vegetarian" name="food" value="vegetarian">
-                        <label for="vegetarian">Vegetarisk</label>
-                    </div>
-                </div>
-        
-                <div class="form-reg">
-                    <label for="allergies">Ange allergier</label>
-                    <textarea id="allergies" name="allergies" rows="3" placeholder="Ange dina allergier här..."></textarea>
-                </div>
-        
-                <div class="form-reg-radio">
-                    <input type="checkbox" id="yes" name="terms" value="yes" required>
-                    <label for="yes">Jag bekräftar att jag förstår och godkänner villkoren.</label>
-                </div>
-        
-                <button type="submit" class="submit-button">Skicka Anmälan</button>
-            </form>
-        
-        </body>
-        </html>
-        
-   
+    <form class="register-form" action="#" method="post">
+        <h2>Anmäl Dig Till Bättre Webb</h2>
 
+        <div class="form-reg">
+            <label for="first-name">Förnamn *</label>
+            <input type="text" id="first-name" placeholder="Förnamn" name="first-name" required>
+        </div>
+        <div class="form-reg">
+            <label for="last-name">Efternamn *</label>
+            <input type="text" id="last-name" placeholder="Efternamn" name="last-name" required>
+        </div>
+
+        <div class="form-reg">
+            <label for="address">Adress *</label>
+            <input type="text" id="address" placeholder="Adress 123" name="address" required>
+        </div>
+
+        <div class="form-reg">
+            <label for="email">E-postadress *</label>
+            <input type="email" id="email" placeholder="name@gmail.com" name="email" required>
+        </div>
+
+        <div class="form-reg-checkbox">
+            <label><strong>Vilka dagar vill du delta? *</strong></label>
+            <div class="checkbox-group">
+                <div>
+                    <input type="checkbox" id="day1" name="days" value="1">
+                    <label for="day1">Dag 1</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="day2" name="days" value="2">
+                    <label for="day2">Dag 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="day3" name="days" value="3">
+                    <label for="day3">Dag 3</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-reg-checkbox">
+            <label><strong>Mat alternativ *</strong></label>
+            <div class="radio-group">
+                <div>
+                    <input type="radio" id="meat" name="food" value="meat" required>
+                    <label for="meat">Kött</label>
+                </div>
+                <div>
+                    <input type="radio" id="fish" name="food" value="fish" required>
+                    <label for="fish">Fisk</label>
+                </div>
+                <div>
+                    <input type="radio" id="vegetarian" name="food" value="vegetarian" required>
+                    <label for="vegetarian">Vegetarisk</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-reg">
+            <label for="allergies">Ange allergier *</label>
+            <textarea id="allergies" name="allergies" rows="3" placeholder="Ange dina allergier här..."></textarea>
+        </div>
+
+        <div class="confirm-checkbox">
+            
+            <label for="terms"><input type="checkbox" id="terms" name="terms" value="yes" required> *  Jag bekräftar att jag förstår och godkänner villkoren.</label>
+        </div>
+
+        <button type="submit" class="submit-button">Skicka Anmälan</button>
+    </form>
 </body>
 </html>
