@@ -73,6 +73,7 @@ label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
+    font-size: 1.2em;
 }
 
 input[type="text"],
@@ -95,14 +96,17 @@ textarea:invalid {
 .form-reg-radio,
 .form-reg-checkbox {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
     flex-wrap: wrap;
+    font-size: 1.1em;
+    
 }
 
 .form-reg-radio label,
 .form-reg-checkbox label {
     font-weight: normal;
+    
 }
 
 .submit-button {
@@ -126,8 +130,14 @@ textarea:invalid {
     color: var(--clr-biege);
 }
 
+
+input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 0.5rem;
+}
+
 input[type="checkbox"] {
-    transform: scale(1.2);
+    transform: scale(1.5);
     margin-right: 0.5rem;
 }
 
